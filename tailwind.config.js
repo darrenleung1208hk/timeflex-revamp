@@ -6,9 +6,9 @@ module.exports = {
 	],
 	theme: {
 		colors: {
-			primary: "#1891D7",
+			primary: "#0284C7",
 			onPrimary: "#FFFFFF",
-			primaryContainer: "#D8EEFB",
+			primaryContainer: "#E0F2FE",
 			onPrimaryContainer: "#0C4A6E",
 
 			secondary: "#7CC02E",
