@@ -64,16 +64,16 @@ const Colors = () => {
 			</div>
 
 			<div className="w-fit mx-auto mt-4">
-				<div className="bg-error w-56 h-20 p-2 inline-block text-onError">
+				<div className="bg-error w-56 h-24 p-2 inline-block text-onError">
 					Error
 				</div>
-				<div className="bg-onError w-56 h-20 p-2 inline-block text-error">
+				<div className="bg-onError w-56 h-24 p-2 inline-block text-error">
 					On Error
 				</div>
-				<div className="bg-errorContainer w-56 h-20 p-2 inline-block text-onErrorContainer">
+				<div className="bg-errorContainer w-56 h-24 p-2 inline-block text-onErrorContainer">
 					Error Container
 				</div>
-				<div className="bg-onErrorContainer w-56 h-20 p-2 inline-block text-errorContainer">
+				<div className="bg-onErrorContainer w-56 h-24 p-2 inline-block text-errorContainer">
 					On Error Container
 				</div>
 			</div>
