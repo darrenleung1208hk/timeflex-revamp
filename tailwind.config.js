@@ -15,6 +15,11 @@ module.exports = {
 			onSecondary: "#FFFFFF",
 			secondaryContainer: "#ECFCCB",
 			onSecondaryContainer: "#365314",
+
+			background: "#F9FAFB",
+			onBackground: "#111827",
+			surface: "#F9FAFB",
+			onSurface: "#111827",
 		},
 		extend: {},
 	},
