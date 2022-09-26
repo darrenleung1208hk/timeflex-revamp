@@ -16,6 +16,11 @@ module.exports = {
 			secondaryContainer: "#b1f661",
 			onSecondaryContainer: "#0f2000",
 
+			error: "#ba1a1a",
+			onError: "#ffffff",
+			errorContainer: "#ffdad6",
+			onErrorContainer: "#410002",
+
 			background: "#fcfcff",
 			onBackground: "#1a1c1e",
 			surface: "#fcfcff",
@@ -24,11 +29,6 @@ module.exports = {
 			surfaceVariant: "#dee3eb",
 			onSurfaceVariant: "#42474e",
 			outline: "#72787e",
-
-			error: "#ba1a1a",
-			onError: "#ffffff",
-			errorContainer: "#ffdad6",
-			onErrorContainer: "#410002",
 
 			darkPrimary: "#93ccff",
 			onDarkPrimary: "#003351",
