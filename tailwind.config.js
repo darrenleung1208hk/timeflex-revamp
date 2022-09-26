@@ -6,6 +6,9 @@ module.exports = {
 	],
 	theme: {
 		colors: {
+			primaryKey: "#0284C7",
+			secondaryKey: "#65A30D",
+
 			// light mode
 			primary: "#006398",
 			onPrimary: "#ffffff",
