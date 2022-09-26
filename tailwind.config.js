@@ -29,6 +29,16 @@ module.exports = {
 			onError: "#ffffff",
 			errorContainer: "#ffdad6",
 			onErrorContainer: "#410002",
+
+			darkPrimary: "#93ccff",
+			onDarkPrimary: "#003351",
+			darkPrimaryContainer: "#004b73",
+			onDarkPrimaryContainer: "#cce5ff",
+
+			darkSecondary: "#96d947",
+			onDarkSecondary: "#1e3700",
+			darkSecondaryContainer: "#2e4f00",
+			onDarkSecondaryContainer: "#b1f661",
 		},
 		container: {
 			center: true,
