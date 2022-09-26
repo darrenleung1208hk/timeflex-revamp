@@ -30,6 +30,9 @@ module.exports = {
 			errorContainer: "#ffdad6",
 			onErrorContainer: "#410002",
 		},
+		container: {
+			center: true,
+		},
 		extend: {},
 	},
 	plugins: [],
