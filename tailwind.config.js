@@ -11,9 +11,9 @@ module.exports = {
 			primaryContainer: "#E0F2FE",
 			onPrimaryContainer: "#0C4A6E",
 
-			secondary: "#7CC02E",
+			secondary: "#65A30D",
 			onSecondary: "#FFFFFF",
-			secondaryContainer: "#E9F6DB",
+			secondaryContainer: "#ECFCCB",
 			onSecondaryContainer: "#365314",
 		},
 		extend: {},
