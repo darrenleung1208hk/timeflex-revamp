@@ -20,6 +20,11 @@ module.exports = {
 			onBackground: "#111827",
 			surface: "#F9FAFB",
 			onSurface: "#111827",
+
+			surfaceVariant: "#F3F4F6",
+			onSurfaceVariant: "#374151",
+			outline: "#6B7280",
+			outlineVariant: "#E5E7EB",
 		},
 		extend: {},
 	},

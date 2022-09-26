@@ -47,6 +47,21 @@ const Colors = () => {
 					On Surface
 				</div>
 			</div>
+
+			<div className="w-fit mx-auto mt-4">
+				<div className="bg-surfaceVariant w-56 h-20 p-2 inline-block text-onSerfaceVariant">
+					Surface Variant
+				</div>
+				<div className="bg-onSurfaceVariant w-56 h-20 p-2 inline-block text-surfaceVariant">
+					On Surface Variant
+				</div>
+				<div className="bg-outline w-56 h-20 p-2 inline-block text-outlineVariant">
+					Outline
+				</div>
+				<div className="bg-outlineVariant w-56 h-20 p-2 inline-block text-outline">
+					Outline Variant
+				</div>
+			</div>
 		</div>
 	);
 };
