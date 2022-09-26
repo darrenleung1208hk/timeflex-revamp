@@ -10,6 +10,11 @@ module.exports = {
 			onPrimary: "#FFFFFF",
 			primaryContainer: "#D8EEFB",
 			onPrimaryContainer: "#0C4A6E",
+
+			secondary: "#7CC02E",
+			onSecondary: "#FFFFFF",
+			secondaryContainer: "#E9F6DB",
+			onSecondaryContainer: "#365314",
 		},
 		extend: {},
 	},
