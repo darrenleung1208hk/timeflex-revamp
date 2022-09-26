@@ -6,6 +6,7 @@ module.exports = {
 	],
 	theme: {
 		colors: {
+			// light mode
 			primary: "#006398",
 			onPrimary: "#ffffff",
 			primaryContainer: "#cce5ff",
@@ -30,6 +31,7 @@ module.exports = {
 			onSurfaceVariant: "#42474e",
 			outline: "#72787e",
 
+			// dark mode
 			darkPrimary: "#93ccff",
 			onDarkPrimary: "#003351",
 			darkPrimaryContainer: "#004b73",
