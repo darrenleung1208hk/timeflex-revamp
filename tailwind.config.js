@@ -41,6 +41,20 @@ module.exports = {
 			onDarkSecondary: "#1e3700",
 			darkSecondaryContainer: "#2e4f00",
 			onDarkSecondaryContainer: "#b1f661",
+
+			darkError: "#ffb4ab",
+			onDarkError: "#690005",
+			darkErrorContainer: "#93000a",
+			onDarkErrorContainer: "#ffdad6",
+
+			darkBackground: "#1a1c1e",
+			onDarkBackground: "#e2e2e5",
+			darkSurface: "#1a1c1e",
+			onDarkSurface: "#e2e2e5",
+
+			darkSurfaceVariant: "#42474e",
+			onDarkSurfaceVariant: "#c2c7ce",
+			darkOutline: "#8c9198",
 		},
 		container: {
 			center: true,
