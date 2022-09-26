@@ -25,6 +25,11 @@ module.exports = {
 			onSurfaceVariant: "#374151",
 			outline: "#6B7280",
 			outlineVariant: "#E5E7EB",
+
+			error: "#E11D48",
+			onError: "#FFFFFF",
+			errorContainer: "#FFE4E6",
+			onErrorContainer: "#881337",
 		},
 		extend: {},
 	},
