@@ -1,16 +1,21 @@
 import { Grid, Stack, Typography } from "@mui/material";
+import { Event } from "../../../core";
+import { format } from "date-fns";
 
-const events = new Array(35).fill({});
+const events: Event[] = new Array(30).fill({
+	title: "Event 1",
+	startDate: new Date(),
+});
 
 const MonthView = () => {
 	return (
 		<Grid bgcolor="background.default" height="100%" container>
-			{events.map((event, index) => (
+			{events.map(({ title, startDate }: Event, index) => (
 				<Grid key={`event-${index}`} item sm={12 / 7}>
 					<Stack
 						height="100%"
 						sx={[
-							{ py: 1 },
+							{ p: 1 },
 							({ palette }) => ({
 								borderLeft: "0.5px solid",
 								borderTop: "0.5px solid",
@@ -19,8 +24,20 @@ const MonthView = () => {
 						]}
 					>
 						<Typography align="center" variant="subtitle2">
-							{(index + 1) % 30}
+							{(index + 1) % 31}
 						</Typography>
+						<div>
+							<Typography
+								variant="body2"
+								component="span"
+								textTransform="lowercase"
+							>
+								{format(startDate, "p").replace(" ", "")}{" "}
+							</Typography>
+							<Typography variant="body2" component="span">
+								{title}
+							</Typography>
+						</div>
 					</Stack>
 				</Grid>
 			))}
