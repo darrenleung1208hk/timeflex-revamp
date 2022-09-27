@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import { Event } from "../../../core";
 import { format } from "date-fns";
 
@@ -23,9 +23,29 @@ const MonthView = () => {
 							}),
 						]}
 					>
-						<Typography align="center" variant="subtitle2">
-							{(index + 1) % 31}
-						</Typography>
+						<Stack direction="row" justifyContent="center">
+							<Box
+								typography="body2"
+								bgcolor={
+									new Date().getDate() === (index + 1) % 31
+										? "primary.main"
+										: undefined
+								}
+								color={
+									new Date().getDate() === (index + 1) % 31
+										? "primary.contrastText"
+										: undefined
+								}
+								width={25}
+								height={25}
+								borderRadius={999}
+								display="flex"
+								justifyContent="center"
+								alignItems="center"
+							>
+								{(index + 1) % 31}
+							</Box>
+						</Stack>
 						<div>
 							<Typography
 								variant="body2"
