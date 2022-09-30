@@ -52,7 +52,7 @@ export const MonthCalendar = () => {
 								{ p: 1 },
 								({ palette }) => ({
 									borderLeft: "0.5px solid",
-									borderTop: "0.5px solid",
+									borderBottom: "0.5px solid",
 									borderColor: palette.grey["300"],
 								}),
 							]}
