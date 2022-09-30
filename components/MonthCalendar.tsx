@@ -2,7 +2,7 @@ import { Box, Grid, Stack, Typography } from "@mui/material";
 import { Event, getMonthCalendarDays } from "../core";
 import { format } from "date-fns";
 
-const events: Event[] = new Array(35).fill({
+const events: Event[] = new Array(60).fill({
 	title: "Event 1",
 	startDate: new Date(),
 });
