@@ -1,5 +1,5 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
-import { Event } from "../../../core";
+import { Event } from "../core";
 import { format } from "date-fns";
 
 const events: Event[] = new Array(30).fill({
@@ -7,7 +7,7 @@ const events: Event[] = new Array(30).fill({
 	startDate: new Date(),
 });
 
-const MonthView = () => {
+export const MonthCalendar = () => {
 	return (
 		<Grid bgcolor="background.default" height="100%" container>
 			{events.map(({ title, startDate }: Event, index) => (
@@ -64,5 +64,3 @@ const MonthView = () => {
 		</Grid>
 	);
 };
-
-export default MonthView;

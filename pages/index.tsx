@@ -1,13 +1,15 @@
-import { Box } from "@mui/material";
 import type { NextPage } from "next";
-import { Calendar } from "../components";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const Home: NextPage = () => {
-	return (
-		<Box bgcolor="primary.light" height="100vh">
-			<Calendar />
-		</Box>
-	);
+	const router = useRouter();
+
+	useEffect(() => {
+		router.push("/month");
+	}, []);
+
+	return null;
 };
 
 export default Home;
