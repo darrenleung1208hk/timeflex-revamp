@@ -1,6 +1,6 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import { Event, getMonthCalendarDays } from "../core";
-import { format } from "date-fns";
+import { format, isSameDay } from "date-fns";
 
 const events: Event[] = new Array(60).fill({
 	title: "Event 1",
@@ -65,12 +65,10 @@ export const MonthCalendar = () => {
 								<Box
 									typography="body2"
 									bgcolor={
-										new Date().getDate() === (index + 1) % 31
-											? "primary.main"
-											: undefined
+										isSameDay(date, new Date()) ? "primary.main" : undefined
 									}
 									color={
-										new Date().getDate() === (index + 1) % 31
+										isSameDay(date, new Date())
 											? "primary.contrastText"
 											: undefined
 									}
