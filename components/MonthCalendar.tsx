@@ -1,5 +1,5 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
-import { Event } from "../core";
+import { Event, getMonthCalendarDays } from "../core";
 import { format } from "date-fns";
 
 const events: Event[] = new Array(30).fill({
