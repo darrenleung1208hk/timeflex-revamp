@@ -5,3 +5,8 @@ export interface Event {
 	description?: string;
 	location?: string;
 }
+
+export interface CalendarDayCell {
+	date: Date;
+	events: Event[];
+}
