@@ -2,7 +2,7 @@ import { Box, Grid, Stack, Typography } from "@mui/material";
 import { Event, getMonthCalendarDays } from "../core";
 import { format } from "date-fns";
 
-const events: Event[] = new Array(30).fill({
+const events: Event[] = new Array(35).fill({
 	title: "Event 1",
 	startDate: new Date(),
 });
@@ -10,7 +10,11 @@ const events: Event[] = new Array(30).fill({
 const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 const daysOfWeekBarHeight = "30px";
 
+const month = 9;
+
 export const MonthCalendar = () => {
+	const dates = getMonthCalendarDays(month);
+
 	return (
 		<Box height="100%">
 			<Grid
@@ -44,7 +48,7 @@ export const MonthCalendar = () => {
 				height={`calc(100% - ${daysOfWeekBarHeight})`}
 				container
 			>
-				{events.map(({ title, startDate }: Event, index) => (
+				{dates.map((date, index) => (
 					<Grid key={`event-${index}`} item sm={12 / 7}>
 						<Stack
 							height="100%"
@@ -77,7 +81,7 @@ export const MonthCalendar = () => {
 									justifyContent="center"
 									alignItems="center"
 								>
-									{(index + 1) % 31}
+									{date.getDate()}
 								</Box>
 							</Stack>
 							<div>
@@ -86,10 +90,10 @@ export const MonthCalendar = () => {
 									component="span"
 									textTransform="lowercase"
 								>
-									{format(startDate, "p").replace(" ", "")}{" "}
+									{format(events[index].startDate, "p").replace(" ", "")}{" "}
 								</Typography>
 								<Typography variant="body2" component="span">
-									{title}
+									{events[index].title}
 								</Typography>
 							</div>
 						</Stack>
