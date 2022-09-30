@@ -7,7 +7,7 @@ const events: Event[] = new Array(35).fill({
 	startDate: new Date(),
 });
 
-const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const daysOfWeekBarHeight = "30px";
 
 const month = 9;
