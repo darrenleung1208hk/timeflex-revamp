@@ -1,4 +1,5 @@
-import React from "react";
+import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
+import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 import {
 	AppBar as MuiAppBar,
 	Box,
@@ -8,8 +9,6 @@ import {
 	Toolbar,
 	Typography,
 } from "@mui/material";
-import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
-import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 
 export const AppBar = () => {
 	return (
