@@ -1,18 +1,17 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
-import { Event, getMonthCalendarDays } from "../core";
+import { Event, getMonthCalendarDays, Month } from "../core";
 import { format, isSameDay } from "date-fns";
-
-const events: Event[] = new Array(60).fill({
-	title: "Event 1",
-	startDate: new Date(),
-});
+import React from "react";
 
 const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const daysOfWeekBarHeight = "30px";
 
-const month = 9;
+interface Props {
+	month: Month;
+	events: Event[];
+}
 
-export const MonthCalendar = () => {
+export const MonthCalendar: React.FC<Props> = ({ month, events }) => {
 	const dates = getMonthCalendarDays(month);
 
 	return (
