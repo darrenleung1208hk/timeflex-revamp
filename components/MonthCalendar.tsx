@@ -1,7 +1,7 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
-import { Event, getMonthCalendarDays, Month } from "../core";
 import { format, isSameDay } from "date-fns";
 import React from "react";
+import { Event, getMonthCalendarDays, Month } from "../core";
 
 const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const daysOfWeekBarHeight = "30px";
@@ -48,7 +48,7 @@ export const MonthCalendar: React.FC<Props> = ({ month, events }) => {
 				height={`calc(100% - ${daysOfWeekBarHeight})`}
 				container
 			>
-				{dates.map((date, index) => (
+				{dates.map((date) => (
 					<Grid key={date.toDateString()} item sm={12 / 7}>
 						<Stack
 							height="100%"
@@ -83,16 +83,26 @@ export const MonthCalendar: React.FC<Props> = ({ month, events }) => {
 								</Box>
 							</Stack>
 							<div>
-								<Typography
-									variant="body2"
-									component="span"
-									textTransform="lowercase"
-								>
-									{format(events[index].startDate, "p").replace(" ", "")}{" "}
-								</Typography>
-								<Typography variant="body2" component="span">
-									{events[index].title}
-								</Typography>
+								{events
+									.filter((event) => isSameDay(event.startDate, date))
+									.map((event) => (
+										<Box
+											key={`${
+												event.title
+											}-${event.startDate.toDateString()}-${event.endDate.toDateString()}`}
+										>
+											<Typography
+												variant="body2"
+												component="span"
+												textTransform="lowercase"
+											>
+												{format(event.startDate, "p").replace(" ", "")}{" "}
+											</Typography>
+											<Typography variant="body2" component="span">
+												{event.title}
+											</Typography>
+										</Box>
+									))}
 							</div>
 						</Stack>
 					</Grid>
