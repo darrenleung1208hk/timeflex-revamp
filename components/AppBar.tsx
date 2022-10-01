@@ -25,12 +25,12 @@ export const AppBar = () => {
 					</Typography>
 					<Stack direction="row" spacing={2}>
 						<Box>
-							<IconButton>
-								<KeyboardArrowLeftRoundedIcon sx={{ color: "primary.main" }} />
+							<IconButton color="primary">
+								<KeyboardArrowLeftRoundedIcon />
 							</IconButton>
 							<Button>Today</Button>
-							<IconButton>
-								<KeyboardArrowRightRoundedIcon sx={{ color: "primary.main" }} />
+							<IconButton color="primary">
+								<KeyboardArrowRightRoundedIcon />
 							</IconButton>
 						</Box>
 					</Stack>
