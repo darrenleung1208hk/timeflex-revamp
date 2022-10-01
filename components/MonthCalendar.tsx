@@ -24,6 +24,7 @@ export const MonthCalendar: React.FC<Props> = ({ month, events }) => {
 			>
 				{daysOfWeek.map((day) => (
 					<Grid
+						key={day}
 						item
 						sm={12 / 7}
 						sx={({ palette }) => ({
