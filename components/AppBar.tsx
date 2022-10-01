@@ -40,10 +40,19 @@ export const AppBar = () => {
 						TimeFlex
 					</Typography>
 					<Stack direction="row" spacing={2}>
+						<Box>
+							<IconButton color="primary">
+								<KeyboardArrowLeftRoundedIcon />
+							</IconButton>
+							<Button>Today</Button>
+							<IconButton color="primary">
+								<KeyboardArrowRightRoundedIcon />
+							</IconButton>
+						</Box>
 						<Button
 							endIcon={<KeyboardArrowDownRoundedIcon />}
 							onClick={toggleViewSelect}
-							variant={Boolean(anchorEl) ? "contained" : "text"}
+							variant={Boolean(anchorEl) ? "contained" : "outlined"}
 						>
 							Week
 						</Button>
@@ -53,8 +62,9 @@ export const AppBar = () => {
 							onClose={() => setAnchorEl(null)}
 							PaperProps={{
 								sx: {
-									minWidth: "200px",
+									minWidth: "180px",
 									borderRadius: 0,
+									mt: 1,
 								},
 							}}
 						>
@@ -70,17 +80,6 @@ export const AppBar = () => {
 								</MenuItem>
 							))}
 						</Menu>
-					</Stack>
-					<Stack direction="row" spacing={2}>
-						<Box>
-							<IconButton color="primary">
-								<KeyboardArrowLeftRoundedIcon />
-							</IconButton>
-							<Button>Today</Button>
-							<IconButton color="primary">
-								<KeyboardArrowRightRoundedIcon />
-							</IconButton>
-						</Box>
 					</Stack>
 				</Toolbar>
 			</MuiAppBar>
