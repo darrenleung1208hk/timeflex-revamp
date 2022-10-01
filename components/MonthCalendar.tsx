@@ -49,7 +49,7 @@ export const MonthCalendar: React.FC<Props> = ({ month, events }) => {
 				container
 			>
 				{dates.map((date, index) => (
-					<Grid key={`event-${index}`} item sm={12 / 7}>
+					<Grid key={date.toDateString()} item sm={12 / 7}>
 						<Stack
 							height="100%"
 							sx={[
