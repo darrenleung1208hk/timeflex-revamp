@@ -1,4 +1,5 @@
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { Box, CssBaseline, Theme, ThemeProvider } from "@mui/material";
+import { CSSProperties } from "@mui/material/styles/createMixins";
 import type { AppProps } from "next/app";
 import { Provider } from "react-redux";
 import { AppBar } from "../components";
@@ -11,7 +12,16 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
 				<AppBar />
-				<Component {...pageProps} />
+				<Box
+					height={({ mixins }: Theme) =>
+						`calc(100vh - ${
+							(mixins.toolbar["@media (min-width:600px)"] as CSSProperties)
+								.minHeight
+						}px)`
+					}
+				>
+					<Component {...pageProps} />
+				</Box>
 			</ThemeProvider>
 		</Provider>
 	);

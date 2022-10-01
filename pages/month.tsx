@@ -10,7 +10,7 @@ const events: Event[] = [
 
 const Month: NextPage = () => {
 	return (
-		<Box height="100vh">
+		<Box height="100%">
 			<MonthCalendar month={8} events={events} />
 		</Box>
 	);

@@ -31,7 +31,7 @@ export const AppBar = () => {
 	return (
 		<div>
 			<Toolbar />
-			<MuiAppBar color="transparent" elevation={0}>
+			<MuiAppBar color="inherit" elevation={0}>
 				<Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
 					<Typography
 						variant="subtitle1"
